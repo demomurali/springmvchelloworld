@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.example.stockspring.dao.CompanyDao;
-import com.example.stockspring.dao.CompanyDaoImpl;
 import com.example.stockspring.model.Company;
 
 @Service
@@ -31,7 +30,7 @@ public class CompanyServiceImpl implements CompanyService {
 
 	@Override
 	public List<Company> getCompanyList() throws SQLException {
-		return companyDao.getCompanyList();
+		return companyDao.findAll();
 	}
 
 }

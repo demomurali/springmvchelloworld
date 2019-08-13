@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import com.example.stockspring.model.Company;
-
+/*
 @Repository
 public class CompanyDaoImpl implements CompanyDao{
 
@@ -17,7 +17,6 @@ public class CompanyDaoImpl implements CompanyDao{
 		PreparedStatement ps=conn.prepareStatement("insert into company (clo) value(?,?,?,?,?)")
 		ps.setInt(1, company.getCompanyId());
 		ps.executeUpdate();
-		*/
 		return null;
 	}
 
@@ -65,3 +64,4 @@ public class CompanyDaoImpl implements CompanyDao{
 	}
 
 }
+*/

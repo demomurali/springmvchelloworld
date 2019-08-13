@@ -25,7 +25,7 @@ System.out.println(companyList);
 	%>
 <tr>
 <td><%= e.getCompanyId() %><td>
-<td><%= e.getBoardOfDirectors() %></td>
+<td><%= e.getBoardofdirectors() %></td>
 </tr>
 <% }%>
 
