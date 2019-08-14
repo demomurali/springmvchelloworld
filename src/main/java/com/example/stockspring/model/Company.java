@@ -4,6 +4,9 @@ package com.example.stockspring.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 import java.math.BigDecimal;
 
 @Entity
@@ -28,6 +31,11 @@ public class Company {
 	
 	private BigDecimal turnover;
 
+	
+	@ManyToOne
+	@JoinColumn(name="sector_id")
+	private Sector sector;
+	
 	
 	@Column(name="breifwriteup")
 	private String breifWriteUp;

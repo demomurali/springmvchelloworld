@@ -14,3 +14,7 @@ public class SpringMvcExampleApplicationTests {
 	}
 
 }
+/*
+Neither BindingResult nor plain target object for bean 
+name 'command' available as request attribute
+*/
