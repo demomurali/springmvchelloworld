@@ -18,8 +18,8 @@ public class CompanyServiceImpl implements CompanyService {
 	
 	@Override
 	public Company insertCompany(Company company) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return companyDao.save(company);
 	}
 
 	@Override

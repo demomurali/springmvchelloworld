@@ -11,12 +11,6 @@ import java.math.BigDecimal;
 
 @Entity
 public class Company {
-
-	/*
-	 * org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [turnover] in table [company]; found [decimal (Types#DECIMAL)], but expecting [double precision (Types#DOUBLE)]
-
-	 * 
-	 */
 	
 	@Id
 	@Column(name="company_code")
